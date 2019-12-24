@@ -1,5 +1,18 @@
 @tailwind base;
 
+a {
+    text-decoration: none;
+    @apply .text-teal-400;
+}
+
+.top-nav {
+    @apply .text-gray-700 .text-sm .mr-4 .font-semibold .pb-4 .border-b-2 .border-solid .border-transparent;
+}
+
+.top-nav:hover {
+    @apply .text-teal-400 .border-teal-400;
+}
+
 @tailwind components;
 
 @tailwind utilities;

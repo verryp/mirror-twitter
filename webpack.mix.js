@@ -15,5 +15,6 @@ const mix = require('laravel-mix');
 //     .sass('resources/sass/app.scss', 'public/css');
 
 mix.postCss('resources/css/main.css', 'public/css', [
-    require('tailwindcss'),
-])
+        require('tailwindcss'),
+    ])
+    .browserSync('mirror-twitter.test');
